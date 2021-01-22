@@ -9,6 +9,10 @@ function App(props) {
       <div id="content">
         <MainHeader />
         <SecondaryHeader />
+        <div className="main row">
+          <div className="col-md-3 col-lg-2"></div>
+          <div className="col-md-9 col-lg-10"></div>
+        </div>
       </div>
       <Footer />
     </div>
