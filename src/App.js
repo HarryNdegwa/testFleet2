@@ -9,9 +9,9 @@ function App(props) {
       <div id="content">
         <MainHeader />
         <SecondaryHeader />
-        <div className="main row">
-          <div className="col-md-3 col-lg-2"></div>
-          <div className="col-md-9 col-lg-10"></div>
+        <div className="main row no-gutters">
+          <div className="col-md-3 col-lg-2 main-sidebar"></div>
+          <div className="col-md-9 col-lg-10 main-content"></div>
         </div>
       </div>
       <Footer />
