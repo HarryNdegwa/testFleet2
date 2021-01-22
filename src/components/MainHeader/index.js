@@ -1,13 +1,15 @@
 import React from "react";
 import { GiSteeringWheel } from "react-icons/gi";
 import "./style.css";
+import HamburgerMenu from "react-hamburger-menu";
 
 function MainHeader(props) {
+  const handleClick = () => {};
   return (
     <div className="main-header">
       <div className="container h-100">
-        <div className="row w-100 justify-between h-100 m-0">
-          <div className="col-6 col-md-4 brand">
+        <div className="w-100 h-100 m-0" style={{ display: "flex" }}>
+          <div className="brand">
             <span>
               <GiSteeringWheel className="brand-icon" />
             </span>
@@ -17,13 +19,21 @@ function MainHeader(props) {
               </b>
             </p>
           </div>
-          <div className="col-md-7 header-buttons">
+          <div className="header-buttons">
             <button className="btn">Jobs</button>
             <button className="btn">Get Social</button>
             <button className="btn">James Keem</button>
           </div>
-          <div className="col-6 col-md-1 header-hamburger h-100">
-            <h5>Menu</h5>
+          <div className="header-hamburger h-100">
+            <h5 className="mr-2">Menu</h5>
+            <HamburgerMenu
+              isOpen={false}
+              menuClicked={handleClick}
+              width={20}
+              height={16}
+              color="#454444"
+              strokeWidth={3}
+            />
           </div>
         </div>
       </div>
