@@ -5,9 +5,11 @@ import Footer from "./components/Footer";
 
 function App(props) {
   return (
-    <div className="App">
-      <MainHeader />
-      <SecondaryHeader />
+    <div id="main">
+      <div id="content">
+        <MainHeader />
+        <SecondaryHeader />
+      </div>
       <Footer />
     </div>
   );
