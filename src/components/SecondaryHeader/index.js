@@ -3,7 +3,7 @@ import React from "react";
 import "./style.css";
 
 function SecondaryHeader(props) {
-  return <div></div>;
+  return <div className="secondary-header"></div>;
 }
 
 export default SecondaryHeader;

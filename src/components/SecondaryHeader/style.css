@@ -1,0 +1,4 @@
+.secondary-header {
+  background-color: black;
+  height: var(--secondary-header-height);
+}
