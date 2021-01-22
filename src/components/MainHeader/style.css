@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.header-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .brand {
   display: flex;
   align-items: center;
