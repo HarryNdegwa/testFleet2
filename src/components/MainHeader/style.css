@@ -13,7 +13,28 @@
 
 .header-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.header-buttons button {
+  border: 1px solid var(--secondary-color);
+  width: 175px;
+  border-radius: 0px;
+}
+
+.header-buttons button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.header-buttons button:hover {
+  background-color: var(--secondary-background);
+  color: #fff;
+}
+
+.header-buttons button:last-child {
+  background-color: var(--secondary-background);
+  color: #fff;
 }
 
 .brand {

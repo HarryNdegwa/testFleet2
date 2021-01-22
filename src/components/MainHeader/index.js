@@ -17,12 +17,12 @@ function MainHeader(props) {
               </b>
             </h3>
           </div>
-          <div className="col-md-6 header-buttons">
+          <div className="col-md-7 header-buttons">
             <button className="btn btn-lg">Jobs</button>
             <button className="btn btn-lg">Get Social</button>
             <button className="btn btn-lg">James Keem</button>
           </div>
-          <div className="col-6 col-md-2"></div>
+          <div className="col-6 col-md-1"></div>
         </div>
       </div>
     </div>
