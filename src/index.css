@@ -5,6 +5,8 @@
 
 :root {
   /* --skeletons-background: #eee; */
+  --main-header-height: 70px;
+  --main-background-color: yellow;
 }
 
 h1,
