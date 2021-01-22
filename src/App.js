@@ -1,9 +1,12 @@
 import "./App.css";
+import MainHeader from "./components/MainHeader";
+import SecondaryHeader from "./components/SecondaryHeader";
 
 function App(props) {
   return (
     <div className="App">
-      <h3>Helloo World</h3>
+      <MainHeader />
+      <SecondaryHeader />
     </div>
   );
 }
