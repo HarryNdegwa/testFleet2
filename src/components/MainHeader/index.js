@@ -3,7 +3,7 @@ import React from "react";
 import "./style.css";
 
 function MainHeader(props) {
-  return <div></div>;
+  return <div className="main-header"></div>;
 }
 
 export default MainHeader;

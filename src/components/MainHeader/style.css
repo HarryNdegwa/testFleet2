@@ -1,0 +1,4 @@
+.main-header {
+  height: var(--main-header-height);
+  width: 100vw;
+}
