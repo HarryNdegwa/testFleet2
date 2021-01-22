@@ -5,3 +5,14 @@
   position: sticky;
   top: 0px;
 }
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
