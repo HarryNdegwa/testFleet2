@@ -60,7 +60,14 @@ function Home(props) {
                       style={{ fontSize: "35px", color: "#454444" }}
                       onClick={handleFilterClick}
                     />
-                    {showMainFilter ? <Filters /> : null}
+                    {showMainFilter ? (
+                      <Filters
+                        showMainSubFilter1={showMainSubFilter1}
+                        setshowMainSubFilter1={setshowMainSubFilter1}
+                        showMainSubFilter2={showMainSubFilter2}
+                        setshowMainSubFilter2={setshowMainSubFilter2}
+                      />
+                    ) : null}
                   </span>
                 </div>
                 <div className="profiles-wrapper">
