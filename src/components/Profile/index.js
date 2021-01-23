@@ -24,6 +24,10 @@ function Profile(props) {
         <div id="profile-action-time">
           <p style={{ fontWeight: "600" }}>11:00 a.m</p>
         </div>
+
+        <div class="unread-count">
+          <p>4</p>
+        </div>
       </div>
     </div>
   );
