@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import MainHeader from "../MainHeader";
 import SecondaryHeader from "../SecondaryHeader";
@@ -9,8 +9,18 @@ import Profile from "../Profile";
 import { FiPlus } from "react-icons/fi";
 import LgChats from "../LgChats";
 import Menu from "../../Menu";
+import Filters from "../Filters";
 
 function Home(props) {
+  const [showMainFilter, setshowMainFilter] = useState(false);
+  const [showMainSubFilter1, setshowMainSubFilter1] = useState(false);
+  const [showMainSubFilter2, setshowMainSubFilter2] = useState(false);
+
+  const handleFilterClick = () => {
+    console.log("Helloo");
+    setshowMainFilter(!showMainFilter);
+  };
+
   return (
     <div id="main">
       <div id="content">
@@ -45,10 +55,12 @@ function Home(props) {
                       placeholder="Search users,messages or chat id's"
                     />
                   </span>{" "}
-                  <span>
+                  <span className="filter-icon-wrapper">
                     <IoFilterCircle
                       style={{ fontSize: "35px", color: "#454444" }}
+                      onClick={handleFilterClick}
                     />
+                    {showMainFilter ? <Filters /> : null}
                   </span>
                 </div>
                 <div className="profiles-wrapper">

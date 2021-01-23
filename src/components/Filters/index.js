@@ -8,7 +8,11 @@ function Filters(props) {
     <div className="filters">
       <div className="filter-header"></div>
       <div className="input-group">
-        <input type="text" aria-label="Text input with dropdown button" />
+        <input
+          className="form-control"
+          type="text"
+          aria-label="Text input with dropdown button"
+        />
         <div className="input-group-append">
           <span>
             <RiArrowDownSLine />
@@ -16,7 +20,11 @@ function Filters(props) {
         </div>
       </div>
       <div className="input-group">
-        <input type="text" aria-label="Text input with dropdown button" />
+        <input
+          className="form-control"
+          type="text"
+          aria-label="Text input with dropdown button"
+        />
         <div className="input-group-append">
           <span>
             <RiArrowDownSLine />

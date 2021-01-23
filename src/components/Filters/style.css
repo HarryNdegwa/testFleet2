@@ -1,0 +1,15 @@
+.filters {
+  position: absolute;
+  top: 10px;
+  width: 280px;
+  height: 300px;
+  right: 40px;
+  background-color: #fff;
+  z-index: 1000;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+
+.filters > .input-group {
+  width: 100%;
+}
