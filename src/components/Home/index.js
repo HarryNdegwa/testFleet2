@@ -17,7 +17,6 @@ function Home(props) {
   const [showMainSubFilter2, setshowMainSubFilter2] = useState(false);
 
   const handleFilterClick = () => {
-    console.log("Helloo");
     setshowMainFilter(!showMainFilter);
   };
 

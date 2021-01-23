@@ -4,7 +4,6 @@ import "./style.css";
 
 function Chat(props) {
   const { sender, content, status, time } = props.data;
-  console.log(sender);
   const getStatusIcon = (status) => {
     switch (status) {
       case "read":
