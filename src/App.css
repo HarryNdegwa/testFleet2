@@ -21,6 +21,27 @@
   top: var(--main-header-height);
 }
 
+.search-wrapper {
+  width: 100%;
+}
+
+.search-wrapper .input-group {
+  background-color: #fff;
+  border: 1px solid #e5af1f;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.search-wrapper input {
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 767px) {
   .main-sidebar {
     display: none;
