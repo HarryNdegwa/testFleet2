@@ -19,7 +19,7 @@ function App(props) {
             className="col-md-9 col-lg-10 main-content"
             style={{ height: "2000px" }}
           >
-            <div className="row h-100 p-3 m-0">
+            <div className="row h-100 px-3 m-0 wrapper">
               <div
                 className="col-lg-5 h-100 main-content-left"
                 style={{ paddingLeft: "10px" }}
@@ -45,7 +45,7 @@ function App(props) {
                     />
                   </span>
                 </div>
-                <div></div>
+                <div className="profiles-wrapper"></div>
               </div>
               <div
                 className="col-lg-7 h-100"
