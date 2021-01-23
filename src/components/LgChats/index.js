@@ -2,7 +2,7 @@ import React from "react";
 import { TiInfoLarge } from "react-icons/ti";
 import { FiMoreVertical } from "react-icons/fi";
 import "./style.css";
-import { data } from "../chats";
+import { data } from "../../chats";
 import Chat from "../Chat";
 import { TiMicrophone } from "react-icons/ti";
 import { VscSmiley } from "react-icons/vsc";

@@ -1,0 +1,162 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+
+.main {
+  background-color: var(--main-background-color);
+  width: 100%;
+}
+
+.main-sidebar {
+  height: 460px;
+  background-color: #94529b;
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--main-header-height);
+  color: #fff;
+}
+
+.sidebar-menu ul {
+  padding: 40px 10px;
+}
+
+.sidebar-menu li a {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar-menu li:hover {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.sidebar-menu li:hover span {
+  color: #000 !important;
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sidebar-menu li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-link-active {
+  background-color: #fff !important;
+  border-radius: 5px;
+  color: #000 !important;
+}
+
+.active-dot {
+  color: #ffbb00;
+  position: absolute;
+  font-size: 30px;
+  top: 11.5px;
+  display: none;
+}
+
+.sidebar-link-active .sidebar-link-text {
+  width: 20%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebar-link-active .active-dot {
+  display: block;
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px 0px 15px;
+  margin: 30px 0;
+}
+
+.search-wrapper .input-group {
+  background-color: #fff;
+  border: 1px solid #e5af1f;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  width: 85%;
+  height: 100%;
+}
+
+.search-wrapper input {
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.search-wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.profiles-wrapper {
+  border: 1px solid#d4d4d4;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 28px 15px 20px;
+}
+
+.lg-new-chat {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.lg-new-chat-btn {
+  background-color: #e5af1f;
+  color: #fff;
+  height: 40px;
+}
+
+.lg-new-chat-btn:hover {
+  color: #fff;
+}
+
+.lg-new-chat-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 767px) {
+  .main-sidebar {
+    display: none;
+  }
+
+  .main-content .wrapper {
+    padding: 0 !important;
+  }
+
+  .search-wrapper {
+    padding: 0px;
+  }
+
+  .profiles-wrapper {
+    padding: 0px;
+    border: none;
+  }
+
+  .lg-new-chat {
+    display: none;
+  }
+}
