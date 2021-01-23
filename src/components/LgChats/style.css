@@ -18,11 +18,13 @@
 }
 
 .chats-subject {
-  background-color: green;
-  flex: 2;
+  flex: 3.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .chats-secondary {
   background-color: blue;
-  flex: 1;
+  flex: 1.5;
 }
