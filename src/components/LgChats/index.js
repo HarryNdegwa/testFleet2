@@ -1,12 +1,21 @@
 import React from "react";
 import { TiInfoLarge } from "react-icons/ti";
+import { FiMoreVertical } from "react-icons/fi";
 import "./style.css";
 
 function LgChats(props) {
   return (
     <div className="large-screen-chats">
       <div className="chats-meta">
-        <div className="h-100 chats-profile-info"></div>
+        <div className="h-100 chats-profile-info">
+          <img src="./snow.jpg" width="55px" className="rounded-circle" />
+          <div className="titles">
+            <small>
+              <b style={{ fontSize: "11px" }}>Shirly Cook</b>
+            </small>
+            <small style={{ fontSize: "11px" }}>@JohntheD</small>
+          </div>
+        </div>
         <div className="h-100 chats-subject">
           <h6>Inquiry about relocation from Nairobi</h6>
         </div>
@@ -17,6 +26,9 @@ function LgChats(props) {
               <small>Contact Info</small>
             </button>
           </div>
+          <span>
+            <FiMoreVertical style={{ fontSize: "25px" }} />
+          </span>
         </div>
       </div>
     </div>

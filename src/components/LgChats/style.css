@@ -2,19 +2,33 @@
   height: 100%;
   border-radius: 10px;
   border: 1px solid #d4d4d4;
-  overflow: hidden;
 }
 
 .chats-meta {
-  height: 60px;
+  height: 65px;
   background-color: #e8f5f9;
   border-bottom: 1px solid #d4d4d4;
   display: flex;
 }
 
 .chats-profile-info {
-  background-color: red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   flex: 1;
+}
+
+.chats-profile-info img {
+  position: absolute;
+  top: -27.5px;
+}
+
+.chats-profile-info .titles {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
 }
 
 .chats-subject {
@@ -22,6 +36,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.chats-subject h6 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .chats-secondary {
