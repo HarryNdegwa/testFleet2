@@ -5,6 +5,29 @@
 
 .sm-chats-meta {
   height: 60px;
+  display: flex;
+  background-color: #e8f5f9;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.sm-chat-profile {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.sm-chat-subject {
+  background-color: yellow;
+  flex: 3;
+  display: flex;
+  height: 100%;
+}
+.sm-chat-secondary {
+  background-color: green;
+  flex: 1;
+  display: flex;
+  height: 100%;
 }
 
 .sm-chats-wrapper {
