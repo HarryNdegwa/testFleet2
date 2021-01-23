@@ -5,8 +5,14 @@ import "./style.css";
 function Profile(props) {
   return (
     <div className="profile">
-      <div className="profile-meta h-100"></div>
-      <div className="profile-action h-100">
+      <div className="profile-meta h-100 mx-2">
+        <img src="./snow.jpg" width="55px" className="rounded-circle" />
+        <small>
+          <b>Shirly Cook</b>
+        </small>
+        <small>@JohnTheD</small>
+      </div>
+      <div className="profile-action h-100 ml-2">
         <div id="profile-id">
           <small>
             <p>
