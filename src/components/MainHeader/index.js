@@ -3,6 +3,7 @@ import { GiSteeringWheel } from "react-icons/gi";
 import "./style.css";
 import HamburgerMenu from "react-hamburger-menu";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Menu from "../../Menu";
 
 function MainHeader(props) {
   const handleClick = () => {};
@@ -24,6 +25,9 @@ function MainHeader(props) {
             <RiArrowDropDownLine
               style={{ fontSize: "30px", color: "#454444" }}
             />
+            <div id="sm-menu" className="sidebar-menu">
+              <Menu />
+            </div>
           </div>
           <div className="header-buttons">
             <button className="btn">Jobs</button>

@@ -13,7 +13,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Menu(props) {
   return (
-    <ul>
+    <ul style={{ listStyle: "none" }}>
       <li>
         <NavLink activeClassName="sidebar-link-active" to="/profile">
           <span className="mx-2">

@@ -22,31 +22,31 @@
   color: #fff;
 }
 
-.main-sidebar ul {
+.sidebar-menu ul {
   padding: 40px 10px;
 }
 
-.main-sidebar li a {
+.sidebar-menu li a {
   height: 50px;
   display: flex;
   align-items: center;
   position: relative;
 }
-.main-sidebar li:hover {
+.sidebar-menu li:hover {
   background-color: #fff;
   border-radius: 5px;
 }
-.main-sidebar li:hover span {
+.sidebar-menu li:hover span {
   color: #000 !important;
 }
 
-.main-sidebar li a {
+.sidebar-menu li a {
   color: #fff;
   text-decoration: none;
   font-size: 15px;
 }
 
-.main-sidebar li a:hover {
+.sidebar-menu li a:hover {
   text-decoration: none;
   color: #fff;
 }
