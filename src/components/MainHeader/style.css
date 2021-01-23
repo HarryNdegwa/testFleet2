@@ -25,6 +25,10 @@
   font-size: 30px;
 }
 
+#sm-menu-dropdown {
+  display: none;
+}
+
 .header-buttons {
   flex: 4;
   display: flex;
@@ -74,5 +78,13 @@
 
   .brand-text {
     font-size: 20px;
+  }
+
+  #sm-menu-dropdown {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
   }
 }

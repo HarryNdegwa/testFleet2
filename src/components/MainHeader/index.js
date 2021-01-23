@@ -2,6 +2,7 @@ import React from "react";
 import { GiSteeringWheel } from "react-icons/gi";
 import "./style.css";
 import HamburgerMenu from "react-hamburger-menu";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function MainHeader(props) {
   const handleClick = () => {};
@@ -18,6 +19,11 @@ function MainHeader(props) {
                 Insta<span style={{ color: "#e5af1f" }}>Driver</span>
               </b>
             </p>
+          </div>
+          <div id="sm-menu-dropdown">
+            <RiArrowDropDownLine
+              style={{ fontSize: "30px", color: "#454444" }}
+            />
           </div>
           <div className="header-buttons">
             <button className="btn">Jobs</button>
