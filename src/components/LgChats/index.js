@@ -2,6 +2,8 @@ import React from "react";
 import { TiInfoLarge } from "react-icons/ti";
 import { FiMoreVertical } from "react-icons/fi";
 import "./style.css";
+import { data } from "../chats";
+import Chat from "../Chat";
 
 function LgChats(props) {
   return (
@@ -40,6 +42,9 @@ function LgChats(props) {
             </span>
           </small>
         </div>
+        {data.map((chat, idx) => (
+          <Chat key={idx} data={chat} />
+        ))}
       </div>
     </div>
   );

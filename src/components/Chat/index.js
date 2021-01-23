@@ -3,7 +3,8 @@ import React from "react";
 import "./style.css";
 
 function Chat(props) {
-  const { sender } = props;
+  const { sender, content, status, time } = props.data;
+  console.log(sender);
   const getStatusIcon = (status) => {
     switch (status) {
       case "read":
@@ -16,11 +17,25 @@ function Chat(props) {
         return;
     }
   };
+  if (sender) {
+    return (
+      <div className="chat my-chat">
+        <div style={{ flex: "1" }}></div>
+        <div className="x">
+          <p className="w-75">{content}</p>
+          <span>{time}</span>
+          <span>{getStatusIcon(status)}</span>
+        </div>
+      </div>
+    );
+  }
   return (
-    <div className={`chat ${sender ? `my-chat` : `other-chat`}`}>
-      <p className="w-75">{props.content}</p>
-      <span>{props.time}</span>
-      {sender ? <span>{getStatusIcon(props.status)}</span> : null}
+    <div className="chat other-chat">
+      <div>
+        <p className="w-75">{content}</p>
+        <span>{time}</span>
+      </div>
+      <div style={{ flex: "1" }}></div>
     </div>
   );
 }
