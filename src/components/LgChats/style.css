@@ -25,6 +25,22 @@
 }
 
 .chats-secondary {
-  background-color: blue;
-  flex: 1.5;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.chats-secondary .contact-btn {
+  background-color: #454444;
+  color: #fff;
+}
+
+.chats-secondary .contact-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.chats-secondary .contact-btn:hover {
+  color: #fff;
 }
