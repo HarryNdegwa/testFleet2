@@ -1,4 +1,26 @@
 .contact {
-  height: 200px;
-  width: 400px;
+  height: 280px;
+  width: 440px;
+  position: absolute;
+  top: 0px;
+  right: 130px;
+  background-color: white;
+  z-index: 20;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.contact-header {
+  height: 40px;
+  background-color: black;
+}
+
+.contact-body {
+  padding: 50px;
+}
+
+.contact-body div {
+  display: flex;
+  height: 40px;
+  align-items: center;
 }

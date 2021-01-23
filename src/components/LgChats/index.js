@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { TiInfoLarge } from "react-icons/ti";
 import { FiMoreVertical } from "react-icons/fi";
 import "./style.css";
@@ -8,8 +8,14 @@ import { TiMicrophone } from "react-icons/ti";
 import { VscSmiley } from "react-icons/vsc";
 import { MdAttachment } from "react-icons/md";
 import { RiSendPlane2Fill } from "react-icons/ri";
+import Contact from "../Contact";
 
 function LgChats(props) {
+  const [showContact, setShowContact] = useState(false);
+
+  const handleContactClick = () => {
+    setShowContact(!showContact);
+  };
   return (
     <div className="large-screen-chats">
       <div className="chats-meta">
@@ -26,11 +32,12 @@ function LgChats(props) {
           <h6>Inquiry about relocation from Nairobi</h6>
         </div>
         <div className="h-100 chats-secondary">
-          <div>
-            <button className="btn contact-btn">
+          <div className="contact-popup">
+            <button className="btn contact-btn" onClick={handleContactClick}>
               <TiInfoLarge style={{ fontSize: "23px", color: "#e5af1f" }} />
               <small>Contact Info</small>
             </button>
+            {showContact ? <Contact /> : null}
           </div>
           <span>
             <FiMoreVertical style={{ fontSize: "25px" }} />

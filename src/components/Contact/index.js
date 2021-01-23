@@ -6,7 +6,7 @@ function Contact(props) {
   return (
     <div className="contact">
       <div className="contact-header"></div>
-      <div>
+      <div className="contact-body">
         <div className="contact-wrapper">
           <p>Mobile Number </p>
           <button className="btn">07970787504</button>
