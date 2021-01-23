@@ -78,7 +78,11 @@ function Home(props) {
                   <Profile />
                 </div>
               </div>
-              <div className="col-lg-7" style={{ padding: "0px 14px 0px 2px" }}>
+              <div
+                className="col-lg-7"
+                style={{ padding: "0px 14px 0px 2px" }}
+                style={{ height: "1000px" }}
+              >
                 <div className="lg-new-chat">
                   <button className="btn lg-new-chat-btn">
                     <FiPlus /> Start a new chat
