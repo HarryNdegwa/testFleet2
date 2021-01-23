@@ -6,6 +6,8 @@ import { RiSendPlane2Fill } from "react-icons/ri";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import "./style.css";
 import { history } from "../../index";
+import { TiInfoLarge } from "react-icons/ti";
+import { FiMoreVertical } from "react-icons/fi";
 
 function Chats(props) {
   return (
@@ -35,7 +37,14 @@ function Chats(props) {
             <h5>Inquiry about relocation from Nairobi</h5>
           </div>
         </div>
-        <div className="sm-chat-secondary"></div>
+        <div className="sm-chat-secondary">
+          <span>
+            <TiInfoLarge style={{ fontSize: "30px", color: "#ffbb00" }} />
+          </span>
+          <span>
+            <FiMoreVertical style={{ fontSize: "25px" }} />
+          </span>
+        </div>
       </div>
       <div className="sm-chats-wrapper">
         <div style={{ height: "2000px" }}></div>
