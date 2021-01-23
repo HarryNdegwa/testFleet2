@@ -27,7 +27,14 @@ function Chats(props) {
             className="rounded-circle"
           />
         </div>
-        <div className="sm-chat-subject"></div>
+        <div className="sm-chat-subject">
+          <div>
+            <p>
+              Shirly Cook <small>@JointheD</small>
+            </p>
+            <h5>Inquiry about relocation from Nairobi</h5>
+          </div>
+        </div>
         <div className="sm-chat-secondary"></div>
       </div>
       <div className="sm-chats-wrapper">

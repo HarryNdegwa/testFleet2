@@ -18,11 +18,18 @@
 }
 
 .sm-chat-subject {
-  background-color: yellow;
   flex: 3;
-  display: flex;
-  height: 100%;
+  padding: 0px 10px;
+  min-width: 0px;
 }
+
+.sm-chat-subject p,
+.sm-chat-subject h5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .sm-chat-secondary {
   background-color: green;
   flex: 1;
