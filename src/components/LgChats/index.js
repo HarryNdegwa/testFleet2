@@ -31,6 +31,16 @@ function LgChats(props) {
           </span>
         </div>
       </div>
+      <div className="chats">
+        <div className="chats-id">
+          <small>
+            Chat ID:
+            <span className="ml-1" style={{ fontWeight: "600" }}>
+              3362Gd2
+            </span>
+          </small>
+        </div>
+      </div>
     </div>
   );
 }

@@ -66,3 +66,23 @@
 .chats-secondary .contact-btn:hover {
   color: #fff;
 }
+
+.chats {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+.chats-id {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.chats-id small {
+  padding: 2px 15px;
+  background-color: #f4f6f8;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 5px;
+}
