@@ -19,6 +19,25 @@
   position: -webkit-sticky;
   position: sticky;
   top: var(--main-header-height);
+  color: #fff;
+}
+
+.main-sidebar ul {
+  padding: 40px 7px;
+}
+
+.main-sidebar li {
+  height: 45px;
+}
+
+.main-sidebar li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-sidebar li a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .search-wrapper {
