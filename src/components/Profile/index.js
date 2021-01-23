@@ -5,8 +5,9 @@ import "./style.css";
 function Profile(props) {
   return (
     <div className="profile">
-      <div className="profile-meta h-100">
-        <div id="profile-meta-id">
+      <div className="profile-meta h-100"></div>
+      <div className="profile-action h-100">
+        <div id="profile-id">
           <small>
             <p>
               Chat ID:
@@ -16,9 +17,13 @@ function Profile(props) {
             </p>
           </small>
         </div>
-      </div>
-      <div className="profile-action h-100">
-        <div></div>
+
+        <h5>Inquiry about relocation</h5>
+
+        <p>Vacancy adds help you attract potential hires who are</p>
+        <div id="profile-action-time">
+          <p style={{ fontWeight: "600" }}>11:00 a.m</p>
+        </div>
       </div>
     </div>
   );

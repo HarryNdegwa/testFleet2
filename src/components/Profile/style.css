@@ -4,16 +4,40 @@
   border-radius: 5px;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  position: relative;
 }
 
-#profile-meta-id {
+.profile-meta {
+  flex: 1;
+}
+
+.profile-action {
+  flex: 4;
+}
+
+#profile-id {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-#profile-meta-id small {
+#profile-id small {
   padding: 2px 12px;
   background-color: #f4f6f8;
   border-bottom-left-radius: 4px;
+}
+
+.profile-action h5 {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 5px 0px;
+}
+
+#profile-action-time {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
 }
