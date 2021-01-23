@@ -3,6 +3,7 @@ import MainHeader from "./components/MainHeader";
 import SecondaryHeader from "./components/SecondaryHeader";
 import Footer from "./components/Footer";
 import { RiSearchLine } from "react-icons/ri";
+import { IoFilterCircle } from "react-icons/io5";
 
 function App(props) {
   return (
@@ -24,8 +25,8 @@ function App(props) {
                 style={{ paddingLeft: "10px" }}
               >
                 <div className="search-wrapper">
-                  <div class="input-group mb-3">
-                    <div className="input-group-prepend">
+                  <span className="input-group">
+                    <div className="input-group-prepend mr-1">
                       <span>
                         <RiSearchLine
                           style={{ fontSize: "30px", color: "#454444" }}
@@ -37,7 +38,12 @@ function App(props) {
                       className="form-control"
                       placeholder="Search users,messages or chat id's"
                     />
-                  </div>{" "}
+                  </span>{" "}
+                  <span>
+                    <IoFilterCircle
+                      style={{ fontSize: "35px", color: "#454444" }}
+                    />
+                  </span>
                 </div>
                 <div></div>
               </div>
