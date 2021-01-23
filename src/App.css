@@ -26,10 +26,11 @@
   padding: 40px 10px;
 }
 
-.main-sidebar li {
+.main-sidebar li a {
   height: 50px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .main-sidebar li:hover {
   background-color: #fff;
@@ -51,7 +52,28 @@
 }
 
 .sidebar-link-active {
-  background-color: green;
+  background-color: #fff !important;
+  border-radius: 5px;
+  color: #000 !important;
+}
+
+.active-dot {
+  color: #ffbb00;
+  position: absolute;
+  font-size: 30px;
+  top: 11.5px;
+  display: none;
+}
+
+.sidebar-link-active .sidebar-link-text {
+  width: 20%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebar-link-active .active-dot {
+  display: block;
 }
 
 .search-wrapper {
