@@ -4,6 +4,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 10000;
 }
 
 .main-header .container {
@@ -93,7 +94,7 @@
     background-color: #94529b;
     position: absolute;
     top: 100%;
-    z-index: 10000000;
+    z-index: 10000000 !important;
     right: 0px;
     min-width: 250px;
   }
