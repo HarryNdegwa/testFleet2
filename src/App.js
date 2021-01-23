@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import { RiSearchLine } from "react-icons/ri";
 import { IoFilterCircle } from "react-icons/io5";
 import Profile from "./components/Profile";
+import { FiPlus } from "react-icons/fi";
 
 function App(props) {
   return (
@@ -54,6 +55,11 @@ function App(props) {
                 className="col-lg-7 h-100"
                 style={{ padding: "0px 14px 0px 2px" }}
               >
+                <div className="lg-new-chat">
+                  <button className="btn btn-lg lg-new-chat-btn">
+                    <FiPlus /> Start a new chat
+                  </button>
+                </div>
                 <div></div>
               </div>
             </div>
