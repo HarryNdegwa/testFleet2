@@ -4,6 +4,7 @@ import SecondaryHeader from "./components/SecondaryHeader";
 import Footer from "./components/Footer";
 import { RiSearchLine } from "react-icons/ri";
 import { IoFilterCircle } from "react-icons/io5";
+import Profile from "./components/Profile";
 
 function App(props) {
   return (
@@ -45,7 +46,9 @@ function App(props) {
                     />
                   </span>
                 </div>
-                <div className="profiles-wrapper"></div>
+                <div className="profiles-wrapper">
+                  <Profile />
+                </div>
               </div>
               <div
                 className="col-lg-7 h-100"
