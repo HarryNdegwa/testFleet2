@@ -3,4 +3,17 @@
   border: 1px solid #e5af1f;
   border-radius: 5px;
   width: 100%;
+  overflow: hidden;
+}
+
+#profile-meta-id {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#profile-meta-id small {
+  padding: 2px 12px;
+  background-color: #f4f6f8;
+  border-bottom-left-radius: 4px;
 }
