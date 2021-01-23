@@ -6,7 +6,7 @@
   right: 40px;
   background-color: #fff;
   z-index: 1000;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #5d5b59;
   border-radius: 6px;
   text-align: center;
   /* overflow: hidden; */
@@ -14,11 +14,13 @@
 
 .filter-header {
   height: 40px;
-  background: black;
+  background: #5d5b59;
   margin-bottom: 30px;
   color: #fff;
   display: flex;
   align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .filter-header div {

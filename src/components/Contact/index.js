@@ -1,11 +1,18 @@
 import React from "react";
-
+import { TiInfoLarge } from "react-icons/ti";
 import "./style.css";
 
 function Contact(props) {
   return (
     <div className="contact">
-      <div className="contact-header"></div>
+      <div className="contact-header">
+        <h5>
+          <span>
+            <TiInfoLarge style={{ fontSize: "25px", color: "#ffbb00" }} />
+          </span>
+          Contact
+        </h5>
+      </div>
       <div className="contact-body">
         <div className="contact-wrapper">
           <p>Mobile Number </p>
