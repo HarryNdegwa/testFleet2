@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GiSteeringWheel } from "react-icons/gi";
 import "./style.css";
 import HamburgerMenu from "react-hamburger-menu";
@@ -6,7 +6,11 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import Menu from "../../Menu";
 
 function MainHeader(props) {
+  const [showDropDown, setShowDropDown] = useState(false);
   const handleClick = () => {};
+  const handleDropDownClick = () => {
+    setShowDropDown(!showDropDown);
+  };
   return (
     <div className="main-header">
       <div className="container h-100">
@@ -24,10 +28,13 @@ function MainHeader(props) {
           <div id="sm-menu-dropdown">
             <RiArrowDropDownLine
               style={{ fontSize: "30px", color: "#454444" }}
+              onClick={handleDropDownClick}
             />
-            <div id="sm-menu" className="sidebar-menu">
-              <Menu />
-            </div>
+            {showDropDown ? (
+              <div id="sm-menu" className="sidebar-menu">
+                <Menu />
+              </div>
+            ) : null}
           </div>
           <div className="header-buttons">
             <button className="btn">Jobs</button>
