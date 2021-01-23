@@ -21,7 +21,7 @@ function MainHeader(props) {
             </span>
             <p className="ml-2 brand-text">
               <b>
-                Insta<span style={{ color: "#e5af1f" }}>Driver</span>
+                Insta<span style={{ color: "#ffbb00" }}>Driver</span>
               </b>
             </p>
           </div>

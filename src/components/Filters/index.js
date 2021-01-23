@@ -30,7 +30,13 @@ function Filters(props) {
   };
   return (
     <div className="filters">
-      <div className="filter-header"></div>
+      <div className="filter-header">
+        <div>
+          <h5>
+            <b>Filters</b>
+          </h5>
+        </div>
+      </div>
       <div className="input-group">
         <input
           className="form-control"

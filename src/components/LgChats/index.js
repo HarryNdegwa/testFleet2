@@ -34,7 +34,7 @@ function LgChats(props) {
         <div className="h-100 chats-secondary">
           <div className="contact-popup">
             <button className="btn contact-btn" onClick={handleContactClick}>
-              <TiInfoLarge style={{ fontSize: "23px", color: "#e5af1f" }} />
+              <TiInfoLarge style={{ fontSize: "23px", color: "#ffbb00" }} />
               <small>Contact Info</small>
             </button>
             {showContact ? <Contact /> : null}

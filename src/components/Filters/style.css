@@ -16,6 +16,15 @@
   height: 40px;
   background: black;
   margin-bottom: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.filter-header div {
+  width: 180px;
+  margin: auto;
+  text-align: left;
 }
 
 .filters > .input-group {
