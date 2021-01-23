@@ -1,0 +1,15 @@
+.chat {
+  width: 100%;
+}
+
+.my-chat {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.other-chat {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
