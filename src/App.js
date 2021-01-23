@@ -6,6 +6,7 @@ import { RiSearchLine } from "react-icons/ri";
 import { IoFilterCircle } from "react-icons/io5";
 import Profile from "./components/Profile";
 import { FiPlus } from "react-icons/fi";
+import LgChats from "./components/LgChats";
 
 function App(props) {
   return (
@@ -56,11 +57,13 @@ function App(props) {
                 style={{ padding: "0px 14px 0px 2px" }}
               >
                 <div className="lg-new-chat">
-                  <button className="btn btn-lg lg-new-chat-btn">
+                  <button className="btn lg-new-chat-btn">
                     <FiPlus /> Start a new chat
                   </button>
                 </div>
-                <div></div>
+                <div>
+                  <LgChats />
+                </div>
               </div>
             </div>
           </div>

@@ -72,6 +72,11 @@
 .lg-new-chat-btn {
   background-color: #e5af1f;
   color: #fff;
+  height: 40px;
+}
+
+.lg-new-chat-btn:hover {
+  color: #fff;
 }
 
 .lg-new-chat-btn:focus {
