@@ -61,7 +61,7 @@ function App(props) {
                     <FiPlus /> Start a new chat
                   </button>
                 </div>
-                <div>
+                <div className="h-100">
                   <LgChats />
                 </div>
               </div>

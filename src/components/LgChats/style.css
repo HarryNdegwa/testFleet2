@@ -1,5 +1,28 @@
 .large-screen-chats {
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #d4d4d4;
+  overflow: hidden;
+}
+
+.chats-meta {
+  height: 60px;
+  background-color: #e8f5f9;
+  border-bottom: 1px solid #d4d4d4;
+  display: flex;
+}
+
+.chats-profile-info {
+  background-color: red;
+  flex: 1;
+}
+
+.chats-subject {
+  background-color: green;
+  flex: 2;
+}
+
+.chats-secondary {
+  background-color: blue;
+  flex: 1;
 }
