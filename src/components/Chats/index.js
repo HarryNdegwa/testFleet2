@@ -5,12 +5,18 @@ import { MdAttachment } from "react-icons/md";
 import { RiSendPlane2Fill } from "react-icons/ri";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import "./style.css";
+import { history } from "../../index";
 
 function Chats(props) {
   return (
     <div className="sm-chats">
       <div className="sm-chats-meta">
-        <div className="sm-chat-profile">
+        <div
+          className="sm-chat-profile"
+          onClick={() => {
+            history.goBack();
+          }}
+        >
           <span>
             <BiLeftArrowAlt style={{ fontSize: "20px" }} />
           </span>
