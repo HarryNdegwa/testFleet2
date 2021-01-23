@@ -1,0 +1,17 @@
+.sm-chats {
+  height: 100vh;
+  width: 100%;
+}
+
+.sm-chats-meta {
+  height: 60px;
+}
+
+.sm-chats-wrapper {
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.sm-chat-input-wrapper {
+  height: 100px;
+}
