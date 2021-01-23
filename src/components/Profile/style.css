@@ -8,6 +8,10 @@
   margin-bottom: 30px;
 }
 
+.profile-sm {
+  display: none;
+}
+
 .profile-meta {
   flex: 1;
   display: flex;
@@ -59,4 +63,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    display: none;
+  }
+
+  .sm-profile-wrapper {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .sm-profile-wrapper:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .profile-sm {
+    height: 150px;
+    border: 1px solid #e5af1f;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .profile-sm small {
+    font-size: 10px;
+  }
 }
