@@ -23,21 +23,35 @@
 }
 
 .main-sidebar ul {
-  padding: 40px 7px;
+  padding: 40px 10px;
 }
 
 .main-sidebar li {
-  height: 45px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.main-sidebar li:hover {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.main-sidebar li:hover span {
+  color: #000 !important;
 }
 
 .main-sidebar li a {
   color: #fff;
   text-decoration: none;
+  font-size: 15px;
 }
 
 .main-sidebar li a:hover {
   text-decoration: none;
   color: #fff;
+}
+
+.sidebar-link-active {
+  background-color: green;
 }
 
 .search-wrapper {

@@ -29,67 +29,87 @@ function App(props) {
           <div className="col-md-3 col-lg-2 main-sidebar">
             <ul>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <CgUserList />
+                <NavLink
+                  activeClassName="sidebar-link-active"
+                  exact
+                  to="/profile"
+                >
+                  <span className="mx-2">
+                    <CgUserList style={{ fontSize: "25px" }} />
                   </span>
-                  Employer Profile
+                  <span className="ml-2">Employer Profile</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <BiCar />
+                <NavLink
+                  activeClassName="sidebar-link-active"
+                  exact
+                  to="/vehicles"
+                >
+                  <span className="mx-2">
+                    <BiCar style={{ fontSize: "25px" }} />
                   </span>
-                  Onboard Your Vehicles
+                  <span className="ml-2">Onboard Your Vehicles</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <FiSearch />
+                <NavLink
+                  activeClassName="sidebar-link-active"
+                  to="/hire-driver"
+                >
+                  <span className="mx-2">
+                    <FiSearch style={{ fontSize: "25px" }} />
                   </span>
-                  Search & Hire Drivers
+                  <span className="ml-2">Search & Hire Drivers</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <HiOutlineMail />
+                <NavLink activeClassName="sidebar-link-active" to="/">
+                  <span className="mx-2">
+                    <HiOutlineMail style={{ fontSize: "25px" }} />
                   </span>
-                  Inbox
+                  <span className="ml-2">Inbox</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <VscBriefcase />
+                <NavLink
+                  activeClassName="sidebar-link-active"
+                  to="/recruitment"
+                >
+                  <span className="mx-2">
+                    <VscBriefcase style={{ fontSize: "25px" }} />
                   </span>
-                  Recruitment
+                  <span className="ml-2">Recruitment</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <ImTree />
+                <NavLink
+                  activeClassName="sidebar-link-active"
+                  to="/my-organizations"
+                >
+                  <span className="mx-2">
+                    <ImTree style={{ fontSize: "25px" }} />
                   </span>
-                  My Organizations
+                  <span className="ml-2">My Organizations</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <MdStars />
+                <NavLink activeClassName="sidebar-link-active" to="rate-drive">
+                  <span className="mx-2">
+                    <MdStars style={{ fontSize: "25px" }} />
                   </span>
-                  Rate A Driver
+                  <span className="ml-2">Rate A Driver</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/">
-                  <span>
-                    <FaMoneyCheck />
+                <NavLink
+                  activeClassName="sidebar-link-active"
+                  to="/subscriptions"
+                >
+                  <span className="mx-2">
+                    <FaMoneyCheck style={{ fontSize: "25px" }} />
                   </span>
-                  My Subscriptions
+                  <span className="ml-2"> My Subscriptions</span>
                 </NavLink>
               </li>
             </ul>
