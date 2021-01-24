@@ -55,6 +55,15 @@
   color: #fff;
 }
 
+.apply-filters-btn-wrapper button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.apply-filters-btn-wrapper button:hover {
+  color: #fff;
+}
+
 .subfilter1 {
   position: absolute;
   width: 230px;
