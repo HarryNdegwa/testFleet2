@@ -22,8 +22,8 @@
   color: #fff;
 }
 
-.main-content-left {
-  padding: 0px 5px !important;
+.main-content {
+  height: 1300px;
 }
 
 .sidebar-menu ul {
@@ -163,6 +163,10 @@
 @media screen and (max-width: 767px) {
   .main-sidebar {
     display: none;
+  }
+
+  .main-content {
+    height: auto;
   }
 
   .main-content .wrapper {
