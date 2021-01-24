@@ -2,4 +2,43 @@
   background-color: black;
   height: 380px;
   flex-shrink: 0;
+  padding: 50px 110px;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-section {
+  flex: 1;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  color: #d4d4d4;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons li {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 0px 20px;
+    height: auto;
+  }
+
+  .footer-links {
+    display: block;
+  }
+
+  .footer-section {
+    margin: 20px 0px;
+  }
 }
