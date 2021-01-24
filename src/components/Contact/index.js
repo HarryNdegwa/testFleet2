@@ -22,11 +22,11 @@ function Contact(props) {
             <button className="btn">0733221133</button>
           </div>
         </div>
-        <div className="row contact-wrapper">
+        <div className="row no-gutters contact-wrapper">
           <div className="col-md-6">
             <p>Email Address </p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 p-0">
             <button className="btn">johndoe@gmail.com</button>
           </div>
         </div>

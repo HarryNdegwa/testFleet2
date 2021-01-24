@@ -7,7 +7,7 @@
   background-color: white;
   z-index: 20;
   border-radius: 5px;
-  border: 1px solid #5d5b59;
+  border: 1px solid rgb(93, 91, 89);
 }
 
 .contact-header {
@@ -21,21 +21,25 @@
 }
 
 .contact-body {
-  padding: 40px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contact-body div {
+.contact-body .contact-wrapper {
   display: flex;
-  height: 40px;
   align-items: center;
+  margin-bottom: 40px;
+  height: 100%;
 }
 
 .contact-wrapper button {
-  background-color: #d4d4d4;
+  background-color: #eeeee4;
   color: #000;
   border: 1px solid #d4d4d4;
   max-width: 200px;
-  width: 200px;
+  width: 180px;
   font-weight: bold;
   font-size: 15px;
 }
