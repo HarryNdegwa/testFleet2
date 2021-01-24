@@ -22,8 +22,10 @@ function Chat(props) {
         <div style={{ flex: "1" }}></div>
         <div className="x">
           <p className="w-75">{content}</p>
-          <span>{time}</span>
-          <span>{getStatusIcon(status)}</span>
+          <div>
+            <span>{time}</span>
+            <span>{getStatusIcon(status)}</span>
+          </div>
         </div>
       </div>
     );
@@ -32,7 +34,9 @@ function Chat(props) {
       <div className="chat other-chat">
         <div>
           <p className="w-75">{content}</p>
-          <span>{time}</span>
+          <div>
+            <span>{time}</span>
+          </div>
         </div>
         <div style={{ flex: "1" }}></div>
       </div>
