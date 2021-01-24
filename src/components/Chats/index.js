@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { TiMicrophone } from "react-icons/ti";
 import { VscSmiley } from "react-icons/vsc";
 import { MdAttachment } from "react-icons/md";
@@ -8,8 +8,20 @@ import "./style.css";
 import { history } from "../../index";
 import { TiInfoLarge } from "react-icons/ti";
 import { FiMoreVertical } from "react-icons/fi";
+import Contact from "../Contact";
+import More from "../More";
 
 function Chats(props) {
+  const [showContact, setShowContact] = useState(false);
+  const [showMore, setShowMore] = useState(false);
+
+  const handleContactClick = () => {
+    setShowContact(!showContact);
+  };
+
+  const handleMoreClick = () => {
+    setShowMore(!showMore);
+  };
   return (
     <div className="sm-chats">
       <div className="sm-chats-meta">
@@ -38,11 +50,19 @@ function Chats(props) {
           </div>
         </div>
         <div className="sm-chat-secondary">
-          <span>
-            <TiInfoLarge style={{ fontSize: "30px", color: "#ffbb00" }} />
+          <span className="contact-popup">
+            <TiInfoLarge
+              style={{ fontSize: "30px", color: "#ffbb00" }}
+              onClick={handleContactClick}
+            />
+            {showContact ? <Contact /> : null}
           </span>
-          <span>
-            <FiMoreVertical style={{ fontSize: "25px" }} />
+          <span className="more-popup">
+            <FiMoreVertical
+              style={{ fontSize: "25px" }}
+              onClick={handleMoreClick}
+            />
+            {showMore ? <More /> : null}
           </span>
         </div>
       </div>

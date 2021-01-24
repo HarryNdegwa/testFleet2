@@ -14,6 +14,7 @@ import More from "../More";
 function LgChats(props) {
   const [showContact, setShowContact] = useState(false);
   const [showMore, setShowMore] = useState(false);
+
   const handleContactClick = () => {
     setShowContact(!showContact);
   };

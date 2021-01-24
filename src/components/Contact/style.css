@@ -21,7 +21,7 @@
 }
 
 .contact-body {
-  padding: 50px;
+  padding: 40px;
 }
 
 .contact-body div {
@@ -34,9 +34,35 @@
   background-color: #d4d4d4;
   color: #000;
   border: 1px solid #d4d4d4;
+  max-width: 200px;
+  width: 200px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .contact-wrapper button:focus {
   outline: none;
   box-shadow: none;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    height: 280px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    background-color: white;
+    z-index: 20;
+    border-radius: 5px;
+    border: 1px solid #5d5b59;
+  }
+
+  .contact-body {
+    padding: 20px;
+  }
+
+  /* .contact-body div {
+    height: 200px;
+  } */
 }
