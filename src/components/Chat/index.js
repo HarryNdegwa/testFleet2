@@ -27,16 +27,17 @@ function Chat(props) {
         </div>
       </div>
     );
-  }
-  return (
-    <div className="chat other-chat">
-      <div>
-        <p className="w-75">{content}</p>
-        <span>{time}</span>
+  } else {
+    return (
+      <div className="chat other-chat">
+        <div>
+          <p className="w-75">{content}</p>
+          <span>{time}</span>
+        </div>
+        <div style={{ flex: "1" }}></div>
       </div>
-      <div style={{ flex: "1" }}></div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Chat;

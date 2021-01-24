@@ -1,18 +1,21 @@
 .chat {
   width: 100%;
+  margin: 30px 0;
+  display: block;
 }
 
 .my-chat {
-  display: flex;
-}
-.other-chat {
-  display: flex;
+  text-align: right;
 }
 
-.my-chat .x {
+.other-chat {
+  text-align: left;
+}
+
+/* .my-chat .x {
   flex: 2;
 }
 
 .other-chat div {
   flex: 2;
-}
+} */

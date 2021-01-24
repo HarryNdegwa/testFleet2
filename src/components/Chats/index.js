@@ -10,6 +10,8 @@ import { TiInfoLarge } from "react-icons/ti";
 import { FiMoreVertical } from "react-icons/fi";
 import Contact from "../Contact";
 import More from "../More";
+import { data } from "../../chats";
+import Chat from "../Chat";
 
 function Chats(props) {
   const [showContact, setShowContact] = useState(false);
@@ -67,7 +69,11 @@ function Chats(props) {
         </div>
       </div>
       <div className="sm-chats-wrapper">
-        <div style={{ height: "2000px" }}></div>
+        <div>
+          {data.map((chat, idx) => (
+            <Chat key={idx} data={chat} />
+          ))}
+        </div>
       </div>
       <div className="sm-chat-input-wrapper">
         <input type="text" placeholder="Type your message" />
