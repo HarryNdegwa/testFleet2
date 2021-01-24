@@ -162,7 +162,8 @@
   border-radius: 15px;
 }
 
-.contact-popup {
+.contact-popup,
+.more-popup {
   position: relative;
 }
 

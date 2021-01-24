@@ -9,12 +9,17 @@ import { VscSmiley } from "react-icons/vsc";
 import { MdAttachment } from "react-icons/md";
 import { RiSendPlane2Fill } from "react-icons/ri";
 import Contact from "../Contact";
+import More from "../More";
 
 function LgChats(props) {
   const [showContact, setShowContact] = useState(false);
-
+  const [showMore, setShowMore] = useState(false);
   const handleContactClick = () => {
     setShowContact(!showContact);
+  };
+
+  const handleMoreClick = () => {
+    setShowMore(!showMore);
   };
   return (
     <div className="large-screen-chats">
@@ -39,8 +44,12 @@ function LgChats(props) {
             </button>
             {showContact ? <Contact /> : null}
           </div>
-          <span>
-            <FiMoreVertical style={{ fontSize: "25px" }} />
+          <span className="more-popup">
+            <FiMoreVertical
+              style={{ fontSize: "25px" }}
+              onClick={handleMoreClick}
+            />
+            {showMore ? <More /> : null}
           </span>
         </div>
       </div>
