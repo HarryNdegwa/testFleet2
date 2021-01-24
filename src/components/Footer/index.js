@@ -3,12 +3,29 @@ import { ImFacebook2 } from "react-icons/im";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { TiSocialYoutube } from "react-icons/ti";
 import { GrInstagram } from "react-icons/gr";
+import { GiSteeringWheel } from "react-icons/gi";
 
 import "./style.css";
 
 function Footer(props) {
   return (
     <div className="footer">
+      <div className="footer-brand my-4">
+        <span>
+          <GiSteeringWheel style={{ fontSize: "90px" }} />
+        </span>
+        <div>
+          <p className="ml-2 brand-text">
+            <b>
+              Insta<span style={{ color: "#ffbb00" }}>Driver</span>
+            </b>
+          </p>
+          <p className="ml-2">
+            <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />
+            2019 All Rights Reserved.
+          </p>
+        </div>
+      </div>
       <div className="footer-links">
         <div className="footer-section">
           <h5>Useful Links</h5>
