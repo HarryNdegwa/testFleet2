@@ -11,6 +11,15 @@ import LgChats from "../LgChats";
 import Menu from "../../Menu";
 import Filters from "../Filters";
 
+const data = [
+  { active: true, count: true },
+  { active: false, count: false },
+  { active: false, count: true },
+  { active: false, count: true },
+  { active: false, count: false },
+  { active: false, count: true },
+];
+
 function Home(props) {
   const [showMainFilter, setshowMainFilter] = useState(false);
   const [showMainSubFilter1, setshowMainSubFilter1] = useState(false);
@@ -70,12 +79,15 @@ function Home(props) {
                   </span>
                 </div>
                 <div className="profiles-wrapper">
+                  {data.map((data, idx) => (
+                    <Profile data={data} />
+                  ))}
+                  {/* <Profile />
                   <Profile />
                   <Profile />
                   <Profile />
                   <Profile />
-                  <Profile />
-                  <Profile />
+                  <Profile /> */}
                 </div>
               </div>
               <div className="col-lg-7" style={{ padding: "0px 14px 0px 2px" }}>

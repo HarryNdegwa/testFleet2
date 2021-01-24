@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 function Profile(props) {
+  const { data } = props;
   return (
     <React.Fragment>
       <div className="profile">
@@ -29,12 +30,18 @@ function Profile(props) {
 
           <p>Vacancy adds help you attract potential hires who are</p>
           <div id="profile-action-time">
-            <p style={{ fontWeight: "600" }}>11:00 a.m</p>
+            {data.count ? (
+              <p style={{ fontWeight: "600", color: "#2b9f33" }}>11:00 a.m</p>
+            ) : (
+              <p style={{ fontWeight: "600" }}>11:00 a.m</p>
+            )}
           </div>
 
-          <div className="unread-count">
-            <p>4</p>
-          </div>
+          {data.count ? (
+            <div className="unread-count">
+              <p>4</p>
+            </div>
+          ) : null}
         </div>
       </div>
       <Link to="/chats" className="sm-profile-wrapper">
@@ -62,12 +69,18 @@ function Profile(props) {
 
             <p>Vacancy adds help you attract potential hires who are</p>
             <div id="profile-action-time">
-              <p style={{ fontWeight: "600" }}>11:00 a.m</p>
+              {data.count ? (
+                <p style={{ fontWeight: "600", color: "#2b9f33" }}>11:00 a.m</p>
+              ) : (
+                <p style={{ fontWeight: "600" }}>11:00 a.m</p>
+              )}
             </div>
 
-            <div className="unread-count">
-              <p>4</p>
-            </div>
+            {data.count ? (
+              <div className="unread-count">
+                <p>4</p>
+              </div>
+            ) : null}
           </div>
         </div>
       </Link>
