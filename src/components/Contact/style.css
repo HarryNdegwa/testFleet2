@@ -29,3 +29,14 @@
   height: 40px;
   align-items: center;
 }
+
+.contact-wrapper button {
+  background-color: #d4d4d4;
+  color: #000;
+  border: 1px solid #d4d4d4;
+}
+
+.contact-wrapper button:focus {
+  outline: none;
+  box-shadow: none;
+}
