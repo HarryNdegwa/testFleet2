@@ -14,13 +14,21 @@ function Contact(props) {
         </h5>
       </div>
       <div className="contact-body">
-        <div className="contact-wrapper">
-          <p>Mobile Number </p>
-          <button className="btn">07970787504</button>
+        <div className="row no-gutters contact-wrapper">
+          <div className="col-md-6">
+            <p>Mobile Number </p>
+          </div>
+          <div className="col-md-6">
+            <button className="btn">07970787504</button>
+          </div>
         </div>
-        <div className="contact-wrapper">
-          <p>Email Address </p>
-          <button className="btn">johndoe@gmail.com</button>
+        <div className="row contact-wrapper">
+          <div className="col-md-6">
+            <p>Email Address </p>
+          </div>
+          <div className="col-md-6 m-0 p-0">
+            <button className="btn">johndoe@gmail.com</button>
+          </div>
         </div>
       </div>
     </div>
